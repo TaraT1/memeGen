@@ -10,7 +10,7 @@ export default function Main() {
 
     const [allMemes, setAllMemes] = useState([])
 
-    //Get memes
+    //Get memes from meme generator api
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
